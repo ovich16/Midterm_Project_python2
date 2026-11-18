@@ -32,5 +32,3 @@ Enter a letter that you think is in the word below.
     hangman_options[unsuccessful_tries]()
     print('='*90)
     user_move = input('\nYOUR GUESS: ')
-
-move()

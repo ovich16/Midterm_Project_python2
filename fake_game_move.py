@@ -36,5 +36,3 @@ press ENTER to try again.
 {' '*17}This value cannot be entered! Press ENTER to try again.""")
             input()
     return guesses_made
-
-fake_move(['f', 's'])
