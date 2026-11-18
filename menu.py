@@ -22,5 +22,3 @@ You can choose how much I will cheat entering the level of difficulty.
 {' '*10}This value cannot be entered! Press ENTER to try again.""")
             input()
     return diff_choice
-
-welcome_message()
