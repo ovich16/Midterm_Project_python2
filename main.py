@@ -3,6 +3,6 @@ from fake_game_move import fake_move
 
 diff_choice = welcome_message()
 
-excluded_letters = []
+guesses_made = []
 for i in range(diff_choice):
-    excluded_letters = fake_move(excluded_letters)
+    guesses_made = fake_move(guesses_made)
