@@ -1,22 +1,40 @@
-import hangman
+import hangman, re
 
 def fake_move(guesses_made):
     unsuccessful_tries = len(guesses_made)
+    hangman_options = {0:hangman.hangman0,
+                       1:hangman.hangman1,
+                       2:hangman.hangman2}
 
-    print(f"""\033[2J\033[H", end=\n
+    while True:
+        print(f"""\033[2J\033[H", end=\n
 {' '*19}😈😈😈 TRY TO GUESS THE WORD I AM THINKING OF! 😈😈😈
 {'='*90}
 Enter a letter that you think is in the word below.
 {'='*90}\n
 {' '*35 + '_ '*9}\n
 {'='*90}""")
-    hangman_options = {0:hangman.hangman0,
-                       1:hangman.hangman1,
-                       2:hangman.hangman2,
-                       3:hangman.hangman3}
-    hangman_options[unsuccessful_tries]()
-    print('='*90)
-    user_move = input('\nYOUR GUESS: ').lower()
-    guesses_made.append(user_move)
+        hangman_options[unsuccessful_tries]()
+        print('='*90)
+        user_move = input('\nYOUR GUESS: ').lower()
+        if re.fullmatch(r'[a-z]', user_move) and user_move not in guesses_made:
+            guesses_made.append(user_move)
+            print(f"""\n{'='*90}
+{' '*27}😈😈😈 YOUR GUESS IS WRONG! 😈😈😈
+press ENTER to try again.
+{'='*90}""")
+            input()
+            break
+        elif user_move in guesses_made:
+            print(f"""\n{'='*90}
+{' '*23}😈😈😈 YOU'VE ALREADY TRIED THIS LETTER! 😈😈😈
+press ENTER to try again.
+{'='*90}""")
+            input()
+        else:
+            print(f"""\n{'='*90}
+{' '*17}This value cannot be entered! Press ENTER to try again.""")
+            input()
+    return guesses_made
 
-fake_move(['f'])
+fake_move(['f', 's'])
