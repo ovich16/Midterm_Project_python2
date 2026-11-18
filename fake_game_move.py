@@ -49,6 +49,3 @@ def fake_move(guesses_made):
             msg4()
             input()
     return guesses_made
-
-
-fake_move(['a'])
