@@ -28,6 +28,7 @@ def move(word, guess, wrong_guesses_made):
 {'='*90}""")
         hangman_options[unsuccessful_tries]()
         print('='*90)
+        print(f"\nLETTERS YOU'VE TRIED: {' '.join(wrong_guesses_made).upper()}")
         user_move = input('\nYOUR GUESS: ').lower()
 
         if not re.fullmatch(r'[a-z]', user_move):

@@ -10,6 +10,7 @@ def fake_move(wrong_guesses_made):
         message.msg5()
         hangman_options[unsuccessful_tries]()
         print('\n' + '='*90)
+        print(f"\nLETTERS YOU'VE TRIED: {' '.join(wrong_guesses_made).upper()}")
         user_move = input('\nYOUR GUESS: ').lower()
         if re.fullmatch(r'[a-z]', user_move) and user_move not in wrong_guesses_made:
             wrong_guesses_made.append(user_move)
