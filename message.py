@@ -17,3 +17,24 @@ def msg3():
 def msg4():
     print(f"""{'='*90}
 {' '*17}This value cannot be entered! Press ENTER to try again.""")
+
+def msg5():
+    print(f"""\033[2J\033[H", end=\n
+{' '*19}😈😈😈 TRY TO GUESS THE WORD I AM THINKING OF! 😈😈😈
+{'='*90}\n
+Enter a letter that you think is in the word below.\n
+{'='*90}\n
+{' '*35 + '_ '*9}\n
+{'='*90}\n""")
+
+def msg6():
+    print(f"""\n{'='*90}
+{' '*27}😈😈😈 YOUR GUESS IS WRONG! 😈😈😈
+press ENTER to try again.
+{'='*90}""")
+
+def msg7():
+    print(f"""\n{'='*90}
+{' '*23}😈😈😈 YOU'VE ALREADY TRIED THIS LETTER! 😈😈😈
+press ENTER to try again.
+{'='*90}""")
