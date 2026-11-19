@@ -45,3 +45,9 @@ def msg8():
 {'='*90}\n
 Enter a letter that you think is in the word below.\n
 {'='*90}\n""")
+
+def msg9():
+    print(f"""\n{'='*90}
+{' '*26}😈😈😈 YOUR GUESS IS CORRECT! 😈😈😈
+press ENTER to try again.
+{'='*90}""")
