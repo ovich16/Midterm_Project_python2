@@ -8,7 +8,7 @@ def main():
     while True:
         diff_choice = welcome_message()
 
-        wrong_guesses_made = []
+        wrong_guesses_made = set()
         for i in range(diff_choice):
             wrong_guesses_made = fake_move(wrong_guesses_made)
 
