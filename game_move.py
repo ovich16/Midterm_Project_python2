@@ -49,5 +49,3 @@ def move(word, guess, wrong_guesses_made):
                         return (guess, wrong_guesses_made)
                 input()
             input()
-
-move('consensus', '         ', ['a','i','m'])
