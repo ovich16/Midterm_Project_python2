@@ -25,9 +25,9 @@ def move(word, guess, wrong_guesses_made):
 
         message.msg8()
         print(f"""{' '*35 + word_to_print}\n
-{'='*90}""")
+{'='*90}\n""")
         hangman_options[unsuccessful_tries]()
-        print('='*90)
+        print('\n' + '='*90)
         print(f"\nLETTERS YOU'VE TRIED: {' '.join(wrong_guesses_made).upper()}")
         user_move = input('\nYOUR GUESS: ').lower()
 

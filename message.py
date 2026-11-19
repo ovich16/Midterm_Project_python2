@@ -7,16 +7,19 @@ You can choose how much I will cheat by entering the level of difficulty.\n
 {'='*90}""")
 
 def msg2():
-    print(f"""{'='*90}
-{' '*30}Okay! Press ENTER to start ⎛⎝( ` ᢍ ´ )⎠⎞""")
+    print(f"""\n{'='*90}
+{' '*30}Okay! Press ENTER to start ⎛⎝( ` ᢍ ´ )⎠⎞
+{'='*90}""")
 
 def msg3():
-    print(f"""{'='*90}
-{' '*23}Value out of range! Press ENTER to try again.""")
+    print(f"""\n{'='*90}
+{' '*23}Value out of range! Press ENTER to try again.
+{'='*90}""")
 
 def msg4():
-    print(f"""{'='*90}
-{' '*17}This value cannot be entered! Press ENTER to try again.""")
+    print(f"""\n{'='*90}
+{' '*17}This value cannot be entered! Press ENTER to try again.
+{'='*90}""")
 
 def msg5():
     print('\033[2J\033[H', end='')
@@ -55,13 +58,14 @@ press ENTER to continue.
 def msg10():
     print('\033[2J\033[H', end='')
     print(f"""\n{' '*25}😈😈😈 CONGRATULATIONS! YOU WON! 😈😈😈
-{'='*90}\n
-Do you wish to play again?{' '*39}1.YES{' '*16}2.NO
-\n{'='*90}""")
+{'='*90}""")
 
 def msg11():
     print('\033[2J\033[H', end='')
     print(f"""\n{' '*32}😈😈😈 HAHAHA! I WON! 😈😈😈
-{'='*90}\n
+{'='*90}\n""")
+
+def msg12():
+    print(f"""{'='*90}\n
 Do you wish to play again?{' '*39}1.YES{' '*16}2.NO
-\n{'='*90}\n""")
+\n{'='*90}""")
