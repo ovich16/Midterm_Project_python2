@@ -23,7 +23,7 @@ def main():
                 guess = move_result[0]
                 wrong_guesses_made = move_result[1]
 
-        ending = end_game(guess, wrong_guesses_made)
+        ending = end_game(guess, wrong_guesses_made, word)
         if ending == True:
             break
 
