@@ -1,5 +1,5 @@
 def msg1():
-    print('\033[2J\033[H", end=\n')
+    print('\033[2J\033[H', end='')
     print(f"""{' '*20}😈😈😈 WELCOME TO THE EVIL HANGMAN GAME!!! 😈😈😈
 {'='*90}\n
 The rules are simple — guess the word I'm thinking of. (but I will be cheating)
@@ -19,7 +19,7 @@ def msg4():
 {' '*17}This value cannot be entered! Press ENTER to try again.""")
 
 def msg5():
-    print('\033[2J\033[H", end=\n')
+    print('\033[2J\033[H', end='')
     print(f"""{' '*19}😈😈😈 TRY TO GUESS THE WORD I AM THINKING OF! 😈😈😈
 {'='*90}\n
 Enter a letter that you think is in the word below.\n
@@ -40,7 +40,7 @@ press ENTER to try again.
 {'='*90}""")
 
 def msg8():
-    print('\033[2J\033[H", end=\n')
+    print('\033[2J\033[H', end='')
     print(f"""{' '*19}😈😈😈 TRY TO GUESS THE WORD I AM THINKING OF! 😈😈😈
 {'='*90}\n
 Enter a letter that you think is in the word below.\n
@@ -53,14 +53,14 @@ press ENTER to continue.
 {'='*90}""")
 
 def msg10():
-    print('\033[2J\033[H", end=\n')
+    print('\033[2J\033[H', end='')
     print(f"""{' '*25}😈😈😈 CONGRATULATIONS! YOU WON! 😈😈😈
 {'='*90}\n
 Do you wish to play again?{' '*39}1.YES{' '*16}2.NO
 \n{'='*90}""")
 
 def msg11():
-    print('\033[2J\033[H", end=\n')
+    print('\033[2J\033[H', end='')
     print(f"""{' '*32}😈😈😈 HAHAHA! I WON! 😈😈😈
 {'='*90}\n
 Do you wish to play again?{' '*39}1.YES{' '*16}2.NO
