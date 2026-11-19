@@ -14,9 +14,12 @@ def main():
 
     guess = '         '
     while True:
-        end = move(word, guess, wrong_guesses_made)
-        if end == True:
+        move_result = move(word, guess, wrong_guesses_made)
+        if move_result == (True, None):
             break
+        else:
+            guess = move_result[0]
+            wrong_guesses_made = move_result[1]
 
 if __name__ == '__main__':
     main()
