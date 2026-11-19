@@ -1,15 +1,15 @@
 import hangman
 
-def move(word_to_guess = '', word = '    F M  ', guesses_made = ['G', 'r', 's']):
+def move(word, guess, wrong_guesses_made):
     word_to_print = ''
     letters_guessed = 0
-    unsuccessful_tries = len(guesses_made)
+    unsuccessful_tries = len(wrong_guesses_made)
 
-    for letter in word:
+    for letter in guess:
         if letter == ' ':
             word_to_print = word_to_print + '_' + ' '
         else:
-            word_to_print = word_to_print + letter + ' '
+            word_to_print = word_to_print + letter.upper() + ' '
             letters_guessed +=1
 
     print(f"""\033[2J\033[H", end=\n
@@ -31,4 +31,6 @@ Enter a letter that you think is in the word below.
                        9:hangman.hangman9}
     hangman_options[unsuccessful_tries]()
     print('='*90)
-    user_move = input('\nYOUR GUESS: ')
+    user_move = input('\nYOUR GUESS: ').lower()
+
+move('consensus', '         ', ['a','i','m'])
