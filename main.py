@@ -17,13 +17,15 @@ def main():
         guess = '         '
         while True:
             move_result = move(word, guess, wrong_guesses_made)
-            if move_result == (True, None):
+            if move_result == (False, False):
                 break
             else:
                 guess = move_result[0]
                 wrong_guesses_made = move_result[1]
 
-        end_game(guess, wrong_guesses_made)
+        ending = end_game(guess, wrong_guesses_made)
+        if ending == True:
+            break
 
 if __name__ == '__main__':
     main()

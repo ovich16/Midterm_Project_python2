@@ -10,13 +10,13 @@ def move(word, guess, wrong_guesses_made):
                            7:hangman.hangman7,
                            8:hangman.hangman8,
                            9:hangman.hangman9}
-    word_to_print = ''
     unsuccessful_tries = len(wrong_guesses_made)
 
     if check_end.end(wrong_guesses_made, guess) == False:
         return (False, False)
 
     while True:
+        word_to_print = ''
         for letter in guess:
             if letter == ' ':
                 word_to_print = word_to_print + '_' + ' '
@@ -40,12 +40,12 @@ def move(word, guess, wrong_guesses_made):
             if user_move not in word:
                 message.msg6()
                 wrong_guesses_made.append(user_move)
+                input()
                 return (guess, wrong_guesses_made)
             else:
                 message.msg9()
                 for i in range(len(word)):
                     if word[i] == user_move:
-                        guess = guess[:i] + word[i] + guess[i:]
-                        return (guess, wrong_guesses_made)
+                        guess = guess[:i] + word[i] + guess[i+1:]
                 input()
-            input()
+                return (guess, wrong_guesses_made)
