@@ -64,4 +64,4 @@ def msg11():
 {' '*32}😈😈😈 HAHAHA! I WON! 😈😈😈
 {'='*90}\n
 Do you wish to play again?{' '*39}1.YES{' '*16}2.NO
-\n{'='*90}""")
+\n\n{'='*90}""")
