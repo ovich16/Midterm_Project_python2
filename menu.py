@@ -16,5 +16,3 @@ def welcome_message():
             message.msg4()
             input()
     return diff_choice
-
-welcome_message()
