@@ -1,4 +1,4 @@
-import hangman
+import hangman, message
 
 def move(word, guess, wrong_guesses_made):
     word_to_print = ''
@@ -12,12 +12,8 @@ def move(word, guess, wrong_guesses_made):
             word_to_print = word_to_print + letter.upper() + ' '
             letters_guessed +=1
 
-    print(f"""\033[2J\033[H", end=\n
-{' '*19}😈😈😈 TRY TO GUESS THE WORD I AM THINKING OF! 😈😈😈
-{'='*90}
-Enter a letter that you think is in the word below.
-{'='*90}\n
-{' '*35 + word_to_print}\n
+    message.msg8()
+    print(f"""{' '*35 + word_to_print}\n
 {'='*90}""")
 
     hangman_options = {1:hangman.hangman1,

@@ -38,3 +38,10 @@ def msg7():
 {' '*23}😈😈😈 YOU'VE ALREADY TRIED THIS LETTER! 😈😈😈
 press ENTER to try again.
 {'='*90}""")
+
+def msg8():
+    print(f"""\033[2J\033[H", end=\n
+{' '*19}😈😈😈 TRY TO GUESS THE WORD I AM THINKING OF! 😈😈😈
+{'='*90}\n
+Enter a letter that you think is in the word below.\n
+{'='*90}\n""")
