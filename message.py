@@ -51,3 +51,12 @@ def msg9():
 {' '*26}😈😈😈 YOUR GUESS IS CORRECT! 😈😈😈
 press ENTER to continue.
 {'='*90}""")
+
+def msg10():
+    print(f"""\033[2J\033[H", end=\n
+{' '*25}😈😈😈 CONGRATULATIONS! YOU WON! 😈😈😈)
+{'='*90}\n
+Do you wish to play again?{' '*39}1.YES{' '*16}2.NO
+\n{'='*90}""")
+
+msg10()
