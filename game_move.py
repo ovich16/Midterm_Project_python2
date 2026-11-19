@@ -13,16 +13,16 @@ def move(word, guess, wrong_guesses_made):
     word_to_print = ''
     unsuccessful_tries = len(wrong_guesses_made)
 
-    for letter in guess:
-        if letter == ' ':
-            word_to_print = word_to_print + '_' + ' '
-        else:
-            word_to_print = word_to_print + letter.upper() + ' '
-
     if check_end.end(wrong_guesses_made, guess) == False:
         return (False, False)
 
     while True:
+        for letter in guess:
+            if letter == ' ':
+                word_to_print = word_to_print + '_' + ' '
+            else:
+                word_to_print = word_to_print + letter.upper() + ' '
+
         message.msg8()
         print(f"""{' '*35 + word_to_print}\n
 {'='*90}""")
