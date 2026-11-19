@@ -12,15 +12,15 @@ PURPOSE:
 It is an entertaining app the purpose of which was to improve my skills on working with git and projects with several files.
 
 TODO:
-🫑 After executing the selected function, the program does not terminate but returns to the menu to choose another function. Exiting is only done after a specific command.
+- 🫑 After executing the selected function, the program does not terminate but returns to the menu to choose another function. Exiting is only done after a specific command.
 - The functionality of your program is, if possible, spread across separate files main.py only contains function calls and their processing.
-🫑 All the functions apart the main are on the separate files.
-🌶️ Atomic commits on git. 
+- 🫑 All the functions apart the main are on the separate files.
+- 🌶️ Atomic commits on git. 
 - Has a README.md and requirement.txt files.
 - Uses external file to save data.
 - All data structures are used.
 - Uses API.
 - Exceptions.
-🌶️ Data validations.
+- 🌶️ Data validations.
 - No code outside of the functions, follows decompositions principles.
 - No more than 10 functions and 300 lines of code in a single file.
