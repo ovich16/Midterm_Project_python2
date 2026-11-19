@@ -6,15 +6,15 @@ from game_move import move
 def main():
     diff_choice = welcome_message()
 
-    guesses_made = []
+    wrong_guesses_made = []
     for i in range(diff_choice):
-        guesses_made = fake_move(guesses_made)
+        wrong_guesses_made = fake_move(wrong_guesses_made)
 
-    word = get_word(guesses_made)
+    word = get_word(wrong_guesses_made)
 
     guess = '         '
     while True:
-        end = move(word, guess, guesses_made)
+        end = move(word, guess, wrong_guesses_made)
         if end == True:
             break
 
